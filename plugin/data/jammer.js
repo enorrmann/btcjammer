@@ -12,7 +12,7 @@ respString = replaceAll(" estimated","",respString);
 var resp = JSON.parse(respString);
 
 var jammertable = "";
-
+//dsds
 jammertable += '<div class="span"style="width:88%;">';
 jammertable += '<div class="row" style="width:100%;">';
 jammertable += '<div class="widgetlight">';
