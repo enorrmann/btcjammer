@@ -1,0 +1,9 @@
+{
+  "name": "btcjammer",
+  "title": "BTCJammer",
+  "id": "jid1-ha0EXQMvMa91GA",
+  "description": "Integrates the great btcjammer data into btcjam dot com",
+  "author": "enorrmann@gmail.com",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}

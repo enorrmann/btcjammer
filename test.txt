@@ -1,0 +1,69 @@
+btcjam.com/users/
+
+jam.sd.ai/users/4240/al_chart_data
+jam.sd.ai/users/4240/borrowing_chart_data
+jam.sd.ai/users/4240/lending_chart_data
+
+
+
+[{"name":
+"Active","data": {"Investments":"2.56314735","Loans":"37.91682","Debt (estimated)":"27.2760532"}}
+,{"name":
+"Overdue","data":{"Investments":"0","Loans":"0","Debt (estimated)":"0"}}
+,{"name":
+"Funding","data":{"Investments":"0.41604277","Loans":"5","Debt (estimated)":"5.025"}}]
+
+
+borrowing
+{"Repaid":"59.9092332","Active":"37.91682","Funding":"5","Overdue":"0"}
+
+
+lending 
+{"Repaid":"11.67753305","Active":"2.56314735","Funding":"0.41604277","Overdue":"0"}
+
+
+<div class="widgetlight" style="height:130px">
+<h3>BTCJammer Info</h3>
+<div class="widgetcontent">
+
+</div>
+</div>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<table style="width:300px">
+<tbody><tr>
+		<th></th>
+		<th>Active</th>
+		<th>Funding</th>		
+		<th>Overdue</th>
+	</tr>
+	<tr>
+		<td>Investments</td>
+		<td>1</td>		
+		<td>1</td>		
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Loans</td>
+		<td>1</td>		
+		<td>1</td>		
+		<td>94</td>
+	</tr>
+	<tr>
+		<td>Debt</td>
+		<td>1</td>		
+		<td>1</td>		
+		<td>80</td>
+	</tr>
+</tbody></table>
+
+</body>
+</html>
+
+
+$( "div.listing-row-2:contains('Identity verified')" ).html('dasd')
+$(div

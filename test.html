@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<hmtl>
+<head>
+<script src="plugin/data/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+
+<script>
+
+function replaceAll(find, replace, str) {
+  return str.replace(new RegExp(find, 'g'), replace);
+}
+
+var respString = '[{"name":"Active","data": {"Investments":"2.56314735","Loans":"37.91682","Debt (estimated)":"27.2760532"}},{"name":"Overdue","data":{"Investments":"0","Loans":"0","Debt (estimated)":"0"}},{"name":"Funding","data":{"Investments":"0.41604277","Loans":"5","Debt (estimated)":"5.025"}}]';
+respString = respString.replace(/['()]/g,"");
+respString = replaceAll(" estimated","",respString);
+
+var resp = JSON.parse(respString);
+
+$( document ).ready(function() {
+
+var jammertable = "";
+
+jammertable += '<table class="jammerTable">';
+jammertable += '<tr><th>Status</th><th>Investments</th><th>Loans</th><th>Debt</th></tr>';
+jammertable += '<tr><td>Active</td><td class="invActive">1</td><td class="loansActive">2</td><td class="debtActive">3</td></tr>';
+jammertable += '<tr><td>Funding</td><td class="invFunding">1</td><td class="loansFunding">2</td><td class="debtFunding">3</td></tr>';
+jammertable += '<tr><td>Overdue</td><td class="invOverdue">1</td><td class="loansOverdue">2</td><td class="debtOverdue">3</td></tr>';
+jammertable += '</table>';
+
+$('div.jammerDiv').html(jammertable);
+
+$('td.invActive').html(resp[0].data.Investments);
+$('td.invFunding').html(resp[2].data.Investments);
+$('td.invOverdue').html(resp[1].data.Investments);
+
+$('td.loansActive').html(resp[0].data.Loans);
+$('td.loansFunding').html(resp[2].data.Loans);
+$('td.loansOverdue').html(resp[1].data.Loans);
+
+$('td.debtActive').html(resp[0].data.Debt);
+$('td.debtFunding').html(resp[2].data.Debt);
+$('td.debtOverdue').html(resp[1].data.Debt);
+
+
+});
+
+</script>
+<div class="jammerDiv"></div>
+</body>
+</hmtl>
