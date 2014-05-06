@@ -21,7 +21,7 @@ function runScript(tab) {
 	});
 
 	var jammerRequest = Request({
-		url : "http://jam.sd.ai/users/" + userId + "/al_chart_data",
+		url : "http://jamcommunity.org/users/" + userId + "/al_chart_data",
 		onComplete : function(response) {
 			w1.port.emit("replacePage", response.text);
 		}
