@@ -33,16 +33,16 @@ self.port
 
 					$('div.row:nth-child(3)').before(jammertable);
 
-					$('td.invActive').html(resp[0].data.Investments);
-					$('td.invFunding').html(resp[2].data.Investments);
-					$('td.invOverdue').html(resp[1].data.Investments);
+					$('td.invActive').html(Number(resp[0].data.Investments);
+					$('td.invFunding').html(Number(resp[2].data.Investments));
+					$('td.invOverdue').html(Number(resp[1].data.Investments));
 
-					$('td.loansActive').html(resp[0].data.Loans);
-					$('td.loansFunding').html(resp[2].data.Loans);
-					$('td.loansOverdue').html(resp[1].data.Loans);
+					$('td.loansActive').html(Number(resp[0].data.Loans));
+					$('td.loansFunding').html(Number(resp[2].data.Loans));
+					$('td.loansOverdue').html(Number(resp[1].data.Loans));
 
-					$('td.debtActive').html(resp[0].data.Debt);
-					$('td.debtFunding').html(resp[2].data.Debt);
-					$('td.debtOverdue').html(resp[1].data.Debt);
+					$('td.debtActive').html(Number(resp[0].data.Debt));
+					$('td.debtFunding').html(Number(resp[2].data.Debt));
+					$('td.debtOverdue').html(Number(resp[1].data.Debt));
 
 				});
